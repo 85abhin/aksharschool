@@ -1,0 +1,451 @@
+/* css for
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+/* css for nav-bar  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    background-color: #B52B40;  
+}
+
+.navbar-expand-lg .collapse .nav-link{
+    color: white;
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px !important;
+    margin: 0px 5px;
+    
+}
+#navbarNav{
+    margin: 0px auto;
+    }
+
+ /* Custom CSS for hover effect */
+ .nav-item:hover {
+    background-color: #007bff; /* Change to your desired hover color */
+    border-radius: 2px;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff; /* Change text color to ensure readability */
+}
+.logo-text{
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+.dropdown-item{
+    background-color: #B52B40 !important;
+    color: #fff !important;
+}
+ /* Custom CSS for hover effect on dropdown items */
+ .dropdown-item:hover {
+    background-color: #007bff !important; /* Change to your desired hover color */
+    color: #fff; /* Change text color to ensure readability */
+}
+
+/*  CSS for Footer  */
+.footer{
+ border-right: 1px solid white;
+ background-color: #B52B40;
+ text-align: start;
+ font-size: 18px;
+ font-family: "PT Sans", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+}
+
+.footermenu{
+   list-style: none;
+   padding: 25px;
+   text-align: start;
+}
+.footermenu > li {
+    padding: 5px;
+    /* text-align: start; */
+ }
+
+ .footermenu > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    
+ }
+
+ .footermenu li a:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* second footer css  */
+ .footer > h4,address {
+    text-align: start;
+    color: white;
+ }
+ /* social media css */
+ .fa-ul.social-media {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+.social-media-icon {
+    border: 1px solid white;
+    width: 40%;
+}
+
+
+
+.fa-ul.social-media li {
+    display: inline-block; /* Display list items inline */
+    margin: 0 20px; /* Add space around the icons */
+    
+}
+.fa-ul.social-media > li > a > .fa-li{
+    font-size: 30px;
+    color: white;
+}
+
+.fa-ul.social-media > li > a :hover{
+    color: #007bff;
+}
+.footercopy{
+    padding:10px;
+    background-color: #B52B40;
+    color: #fff;
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.imageslider{
+    background-color: #B52B40;
+}
+
+
+.carousel-inner img {   
+    max-height: 500px; /*Adjust the max height as needed */
+    width: 100%; /* Maintain aspect ratio */
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+
+.staffheading{
+    background-color: #B52B40;
+}
+.staffheading > h2{
+    text-align: center;
+    padding: 5px 20px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.card-group{
+    
+    margin: 0%;
+}
+.card-group .card{ 
+    border: none;
+    color: black;
+    border-right: 1px solid white;
+    border-radius: 0px;
+   
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* code for language selection for check box */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+    user-select: none;
+}
+.custom-checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.custom-checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+
+/* ---------------- Upload photo preview code ----------------- */
+.custom-checkbox input[type="checkbox"]:checked + label:after {
+    display: block;
+}
+.preview {
+    margin-top: 10px;
+}
+.preview img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+
+/* ----------Principal and its description css here ---------------------- */
+.principal-container > img  {
+    width: 300px;
+    height: 300px;
+    object-fit:contain;
+    
+}
+.principal-container {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.principal-details {   
+    width: 350px;
+    margin: 20px auto 0; /* Center the div and add some margin at the top */
+    text-align: justify;
+}
+.principal-details p {
+    margin: 10px 0; /* Add some spacing between paragraphs */
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10px;
+}
+.principal-details2 {
+    text-align: justify;
+    line-height: 1.6; /* Improved line spacing */
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px 0px;
+   
+}
+.principal-details b {
+    color: #007BFF; /* Highlighted text in blue */
+}
+
+/* ------------------Motivational quates css here ------------------ */
+
+.quotes-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: #fff3cd; */
+    border-left: 5px solid #B52B40 ; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+.quote-author {
+    font-weight: bold;
+    color: #333;
+}
+.kgstudentsphoto {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.kgstudentsphoto .card {
+    border: none;
+}
+
+.kgstudentsphoto .card-body {
+    padding: 30px;
+}
+
+.kgstudentsphoto h1 {
+    font-size: 50px;
+    font-family:cursive;
+    letter-spacing: 8px;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    color:#007bff;
+}
+
+.kgstudentsphoto img {
+    width: 450px;
+    height: 350px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kgstudentsphoto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* ------------Kg facilitties css here -------- */
+
+
+
+.kgfacsilities {
+    padding: 20px;
+    margin: 20px 0;
+}
+.kgfacsilities .card-body {
+    padding: 30px;
+}
+.kgfacsilities h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.kgfacsilities .list-group-item {
+    font-size: 1.2em;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.kgfacsilities .list-group-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* -------Parenting review css-------- */
+
+.review-card {
+    padding: 10px;
+}
+
+.review-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.review-card p {
+    font-size: 1em;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.star-rating {
+    color: #ffd700; /* yellow color for stars */
+    font-size: 1.2em;
+}
+
+/* Center the text within the review cards */
+.review-card p, .star-rating {
+    text-align: center;
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* -----AI tools code ------- */
+
+.form-group{
+    padding:10px 0px;
+}
+
+
+/* Student payment form CSS */
+.studentpayment > p {
+    margin-left: 20px;
+}
+.studentpayment > form > button {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #007bff;
+}

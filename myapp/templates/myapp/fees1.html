@@ -1,0 +1,21 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    
+
+    <h1>Pay Student Fees</h1>
+    <form action="{% url 'pay_fees' %}" method="post">
+        {% csrf_token %}
+        <label for="identifier">Mobile Number:</label>
+        <input type="text" id="identifier" name="identifier" required>
+        <button type="submit" onclick="myfunction()">Pay Fees</button>
+    </form>
+
+
+      
+  
+    
+  
+{% endblock maincontent %}
+    

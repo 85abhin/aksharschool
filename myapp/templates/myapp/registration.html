@@ -1,0 +1,42 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+<style>
+      .header{
+        position: static !important;
+      }
+</style>
+{% block maincontent %}
+            <!--here the code for student registration  -->
+        <div class="container studentform">
+            <div style="background-color: skyblue;"  class="mb-2 mt-2">
+                <h2 style="color: white; text-align: center; padding: 10px;">Student Registration</h2>
+            </div>
+
+            <form method="post" enctype="multipart/form-data" action="{% url 'studentreg' %}" novalidate>
+              {% csrf_token %}
+              {% for field in form %}
+                  <div class="mb-3">
+                      <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                      {{ field }}
+                      {% if field.help_text %}
+                          <small class="form-text text-muted">{{ field.help_text }}</small>
+                      {% endif %}
+                      {% for error in field.errors %}
+                          <div class="alert alert-danger">{{ error }}</div>
+                      {% endfor %}
+                  </div>
+              {% endfor %}
+              <button type="submit" class="btn btn-primary mb-5">Submit</button>
+          </form>
+          <!-- Display message that  -->
+        {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+       
+        </div>
+{% endblock maincontent %}
+    

@@ -1,0 +1,61 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Student Result Form</h2>
+    <form id="resultForm" class="mb-4">
+        <div class="form-group">
+            <label for="class">Class</label>
+            <select class="form-control" id="class" name="class" required>
+                <option value="">Select Class</option>
+                <option value="1">1st Standard</option>
+                <option value="2">2nd Standard</option>
+                <option value="3">3rd Standard</option>
+                <option value="4">4th Standard</option>
+                <option value="5">5th Standard</option>
+                <option value="6">6th Standard</option>
+                <option value="7">7th Standard</option>
+                <option value="8">8th Standard</option>
+                <option value="9">9th Standard</option>
+                <option value="10">10th Standard</option>
+                <option value="11">11th Standard</option>
+                <option value="12">12th Standard</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rollNumber">Roll Number</label>
+            <input type="text" class="form-control" id="rollNumber" name="rollNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="captcha">Captcha Code</label>
+            <input type="text" class="form-control" id="captcha" name="captcha" required>
+        </div>
+        <!-- Placeholder for captcha image -->
+        <div class="form-group">
+            <img src="path/to/captcha/image" alt="Captcha Image">
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </form>
+    <!-- ------------- -->
+    <div id="resultContainer" style="display: none;">
+        <h3 class="text-center mb-4">Result</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Roll Number</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody id="resultTableBody">
+                <!-- Results will be appended here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    
+  
+{% endblock maincontent %}
+    

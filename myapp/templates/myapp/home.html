@@ -1,0 +1,191 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block maincontent %}
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'myapp/images/school12.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'myapp/images/school2.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'myapp/images/schoolbus1.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'myapp/images/schoolchildren.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Section for the major staff -->
+      <div class="container-fluid mt-5">
+          <div class="row">
+              <div class="col-md-6 shadow-sm principal-container">
+                <img src="{% static 'myapp/images/principal.jpg' %}" alt="Principal" class="img-fluid">
+                <div class="principal-details shadow-sm mt-3"> 
+                    <p><b>Principal</b> : Dr. John Smith</p>
+                    <p><b>Experience</b> : 20 years</p>
+                    <p><b>Education</b> : PhD(Science), Cambridge University</p>
+                </div>
+              </div>
+              <div class="col-md-6 shadow-sm principal-details2 mt-3">
+                <p>
+                  Our principal, Mr. John Smith, brings over 30 years of dedicated experience in the field of education. At 55 years old, he has a profound understanding of both academic and administrative aspects of schooling. Mr. Smith began his career as a high school teacher, quickly rising through the ranks due to his exceptional teaching skills and leadership qualities. His innovative approach to education has earned him several accolades, including the prestigious National Educator Award.
+
+                  Throughout his career, he has been committed to fostering an inclusive and supportive learning environment. Under his leadership, our school has seen significant improvements in student performance and overall academic achievement. Mr. Smith is known for his ability to inspire both students and staff, encouraging continuous professional development and lifelong learning.
+
+                  He has implemented numerous programs aimed at enhancing student engagement and well-being, from extracurricular activities to mental health support. His forward-thinking vision includes integrating technology into the classroom to prepare students for the future. Mr. Smith's dedication to education extends beyond the school, as he actively participates in community outreach and educational policy development.
+                </p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Motivational quotes section -->
+      <div class="container-fluid mt-5">
+        <div class="quotes-container">
+          <div class="quote">
+              "Education is the most powerful weapon which you can use to change the world."
+              <div class="quote-author">- Nelson Mandela</div>
+          </div>
+          <div class="quote">
+              "The function of education is to teach one to think intensively and to think critically. Intelligence plus character – that is the goal of true education."
+              <div class="quote-author">- Martin Luther King Jr.</div>
+          </div>
+          <div class="quote">
+              "The best way to predict your future is to create it."
+              <div class="quote-author">- Abraham Lincoln</div>
+          </div>
+          <div class="quote">
+              "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."
+              <div class="quote-author">- Albert Schweitzer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kindergarten section -->
+      <div class="container-fluid">
+          <div class="staffheading text-center">
+            <h2><b><u>Junior Section</u></b></h2>
+          </div>
+          <div class="row mt-4">
+            <div class="col-sm-6 shadow-sm kgstudentsphoto text-center">
+              <h1>!! Hello friends !!</h1>
+              <img src="{% static 'myapp/images/kgsection2.png' %}" alt="Kindergarten Section" class="img-fluid">
+            </div>
+            <div class="col-sm-6 shadow-sm text-center kgfacsilities">
+              <h1 class="display-4 text-primary">Kindergarten Facilities</h1>
+              <ul class="list-group mt-3">
+                  <li class="list-group-item">Spacious Play Area</li>
+                  <li class="list-group-item">Interactive Learning Tools</li>
+                  <li class="list-group-item">Qualified Teachers</li>
+                  <li class="list-group-item">Safe Environment</li>
+                  <li class="list-group-item">Arts and Crafts Room</li>
+                  <li class="list-group-item">Music and Dance Classes</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      <!-- Student Corner -->
+      <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid white;">
+          <div class="staffheading text-center">
+            <h2><b><u>Our Achievers</u></b></h2>
+          </div>
+        </div>
+        <div class="card-group mt-4">
+          <div class="card shadow-sm">
+            <img src="{% static 'myapp/images/student.jpg' %}" class="card-img-top img-fluid" alt="Student 1">
+            <div class="card-body">
+              <h5 class="card-title">Misha Ninama</h5>
+              <p class="card-text">
+                <b>Percentage</b>: 94.55%<br>
+                <b>Class</b>: 12th<br>
+                <b>Board</b>: CBSE<br>
+                <b>Year</b>: 2024
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <img src="{% static 'myapp/images/studdent2.jpg' %}" class="card-img-top img-fluid" alt="Student 2">
+            <div class="card-body">
+              <h5 class="card-title">John Smith</h5>
+              <p class="card-text">
+                <b>Percentage</b>: 94.55%<br>
+                <b>Class</b>: 12th<br>
+                <b>Board</b>: CBSE<br>
+                <b>Year</b>: 2024
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <img src="{% static 'myapp/images/student3.jpg' %}" class="card-img-top img-fluid" alt="Student 3">
+            <div class="card-body">
+              <h5 class="card-title">Erika Wilson</h5>
+              <p class="card-text">
+                <b>Percentage</b>: 94.55%<br>
+                <b>Class</b>: 12th<br>
+                <b>Board</b>: CBSE<br>
+                <b>Year</b>: 2024
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parenting review section -->
+      <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid white;">
+          <div class="staffheading text-center">
+            <h2><b><u>Our Happy Parents</u></b></h2>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center mt-5">
+          <div class="col-md-2">
+            <div class="review-card">
+              <img src="{% static 'myapp/images/parent1.png' %}" alt="Parent 1" class="img-fluid rounded-circle">
+              <p class="mt-2">"Amazing facilities and staff!"</p>
+              <div class="star-rating">★★★★☆</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="review-card">
+              <img src="{% static 'myapp/images/parent2.png' %}" alt="Parent 2" class="img-fluid rounded-circle">
+              <p class="mt-2">"My child loves it here."</p>
+              <div class="star-rating">★★★★★</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="review-card">
+              <img src="{% static 'myapp/images/parent3.png' %}" alt="Parent 3" class="img-fluid rounded-circle">
+              <p class="mt-2">"Great learning environment."</p>
+              <div class="star-rating">★★★★☆</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="review-card">
+              <img src="{% static 'myapp/images/parent4.png' %}" alt="Parent 4" class="img-fluid rounded-circle">
+              <p class="mt-2">"Highly recommend this place."</p>
+              <div class="star-rating">★★★★★</div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="review-card">
+              <img src="{% static 'myapp/images/parent5.png' %}" alt="Parent 5" class="img-fluid rounded-circle">
+              <p class="mt-2">"Very happy with the school."</p>
+              <div class="star-rating">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock maincontent %}
